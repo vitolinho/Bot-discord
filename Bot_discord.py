@@ -21,6 +21,7 @@ async def on_message(message):
     if message.author == client.user:
         return
     # c'est le channel où les réponses du bot seront
+    # changer '978272464683540530' en fonction de son channel
     Help_channel = client.get_channel(978272464683540530)
 
     # Si on écrit $help
@@ -40,15 +41,6 @@ async def on_message(message):
 
     await client.process_commands(message)
 
-# default_intents = discord.Intents.default()
-# default_intents.members = True
-# client = discord.Client(intents=default_intents)
-
-# @client.event
-# async def on_member_join(member):
-#     arrival_channel = client.get_channel(978295746325545010)
-#     member.send(member.display_name,"a rejoint le serveur !")
-    
-
 # commande permettant de connecter son bot au serveur Discord
+# changer par rapport à son bot OTc4MjI5MzQ1MzU1MTk4NDY0.GQQW_r.r8xPYJiyOwtskNhupCanrq5FDGKNmY8fbLVgQI
 client.run("OTc4MjI5MzQ1MzU1MTk4NDY0.GQQW_r.r8xPYJiyOwtskNhupCanrq5FDGKNmY8fbLVgQI")
