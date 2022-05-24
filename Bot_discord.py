@@ -3,19 +3,29 @@ import discord
 from test_node import *
 from discord.ext import commands
 
-client = commands.Bot(command_prefix="!")
+client = commands.Bot(command_prefix="$")
 
 @client.command()
 async def coucou(ctx):
     await ctx.send("COUCOU !!!")
 
+@client.command()
+async def bot(ctx):
+    await ctx.send("Bienvenue, voici la liste des commandes possible sur le serveur !")
+    await ctx.send("$help : envoie une liste de question posée par le bot à l'utilisateur")
+    await ctx.send("$help_tips : envoie un exemple d'utilisation sur la commande $help")
+    await ctx.send("$admin : envoie un dm à un admin pour répondre au question de l'utilisateur")
+    await ctx.send("$bonus : envoie un lien bonus pour l'utilisateur")
+    await ctx.send("$cours : envoie la liste de cours proposé par le bot")
+    await ctx.send("$tuto : envoie la liste de cours en vidéo proposé par le bot")
+
+@client.command()
+async def bonus(ctx):
+    await ctx.send("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 # @client.command()
 # async def super_coucou(ctx, arg):
 #     await ctx.send(arg)
 
-list_word = ["help","aide","secour"]
-Tree = Node(list_word)
-Tree.print_data()
 
 @client.event
 async def on_message(message):
@@ -26,7 +36,7 @@ async def on_message(message):
         return
     # c'est le channel où les réponses du bot seront
     # changer '978272464683540530' en fonction de son channel
-    Help_channel = client.get_channel(978583666517241906)
+    Help_channel = client.get_channel(978234499177529364)
 
     # Si on écrit $help
     if message.channel == Help_channel and message.content.startswith('$help'):
