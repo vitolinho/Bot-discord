@@ -21,7 +21,12 @@ async def on_message(message):
     if message.author == client.user:
         return
     # c'est le channel où les réponses du bot seront
+<<<<<<< HEAD
     Help_channel = client.get_channel(978272410069516359)
+=======
+    # changer '978272464683540530' en fonction de son channel
+    Help_channel = client.get_channel(978583666517241906)
+>>>>>>> vito
 
     # Si on écrit $help
     if message.channel == Help_channel and message.content.startswith('$help'):
@@ -33,22 +38,13 @@ async def on_message(message):
         # le bot supprimera les 3 derniers messages
         await message.channel.purge(limit=3)
 
-    if message.content.startswith('$dm'): # $dm @lapersonnequelonveut msg
+    if message.content.startswith('$dm'): # $dm @lapersonne msg
         user = message.mentions[0]
         strs = message.content.split(" ")
-        await user.send(strs[2:])
+        await user.send(' '.join(strs[2:]))
 
     await client.process_commands(message)
 
-# default_intents = discord.Intents.default()
-# default_intents.members = True
-# client = discord.Client(intents=default_intents)
-
-# @client.event
-# async def on_member_join(member):
-#     arrival_channel = client.get_channel(978295746325545010)
-#     member.send(member.display_name,"a rejoint le serveur !")
-    
-
 # commande permettant de connecter son bot au serveur Discord
-client.run("OTc4MjI5MzQ1MzU1MTk4NDY0.GQQW_r.r8xPYJiyOwtskNhupCanrq5FDGKNmY8fbLVgQI")
+# changer par rapport à son bot OTc4MjI5MzQ1MzU1MTk4NDY0.GQQW_r.r8xPYJiyOwtskNhupCanrq5FDGKNmY8fbLVgQI
+client.run("OTc4MjI5MzQ1MzU1MTk4NDY0.GmtTj-.m-DZcC0V-XkPTCNoTMNgyFlxQjn2XbhPXguazU")
