@@ -1,6 +1,6 @@
 from email.policy import default
 import discord 
-
+from test_node import *
 from discord.ext import commands
 
 client = commands.Bot(command_prefix="!")
@@ -9,10 +9,14 @@ client = commands.Bot(command_prefix="!")
 async def coucou(ctx):
     await ctx.send("COUCOU !!!")
 
-@client.command()
-async def super_coucou(ctx, arg):
-    await ctx.send(arg)
-    
+# @client.command()
+# async def super_coucou(ctx, arg):
+#     await ctx.send(arg)
+
+list_word = ["help","aide","secour"]
+Tree = Node(list_word)
+Tree.print_data()
+
 @client.event
 async def on_message(message):
     message.content = message.content.lower()
@@ -21,7 +25,7 @@ async def on_message(message):
     if message.author == client.user:
         return
     # c'est le channel où les réponses du bot seront
-    Help_channel = client.get_channel(978272464683540530)
+    Help_channel = client.get_channel(978234499177529364)
 
     # Si on écrit $help
     if message.channel == Help_channel and message.content.startswith('$help'):
@@ -31,7 +35,7 @@ async def on_message(message):
     # Si on écrit del
     if message.content == "del":
         # le bot supprimera les 3 derniers messages
-        await message.channel.purge(limit=3)
+        await message.channel.purge(limit=7)
 
     if message.content.startswith('$dm'): # $dm @lapersonnequelonveut msg
         user = message.mentions[0]
@@ -51,4 +55,6 @@ async def on_message(message):
     
 
 # commande permettant de connecter son bot au serveur Discord
-client.run("OTc4MjI5MzQ1MzU1MTk4NDY0.GQQW_r.r8xPYJiyOwtskNhupCanrq5FDGKNmY8fbLVgQI")
+#client.run("OTc4MjI5MzQ1MzU1MTk4NDY0.GQQW_r.r8xPYJiyOwtskNhupCanrq5FDGKNmY8fbLVgQI")
+
+client.run("OTc4MjI5MzE5ODk5OTQ3MDA4.G2Nqaw.Nop0HfAjM4cAguagp7LdRiMmGSYVdKExyQjHA4")
