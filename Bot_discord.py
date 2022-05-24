@@ -21,7 +21,7 @@ async def on_message(message):
     if message.author == client.user:
         return
     # c'est le channel où les réponses du bot seront
-    Help_channel = client.get_channel(978272464683540530)
+    Help_channel = client.get_channel(978272410069516359)
 
     # Si on écrit $help
     if message.channel == Help_channel and message.content.startswith('$help'):
