@@ -1,7 +1,7 @@
 from email.policy import default
-import discord 
-from test_node import *
+
 from discord.ext import commands
+from Arbre import *
 
 client = commands.Bot(command_prefix="$")
 
@@ -11,17 +11,21 @@ async def coucou(ctx):
 
 @client.command()
 async def bot(ctx):
-    await ctx.send("Bienvenue, voici la liste des commandes possible sur le serveur !")
-    await ctx.send("$help : envoie une liste de question posée par le bot à l'utilisateur")
-    await ctx.send("$help_tips : envoie un exemple d'utilisation sur la commande $help")
-    await ctx.send("$admin : envoie un dm à un admin pour répondre au question de l'utilisateur")
-    await ctx.send("$bonus : envoie un lien bonus pour l'utilisateur")
-    await ctx.send("$cours : envoie la liste de cours proposé par le bot")
-    await ctx.send("$tuto : envoie la liste de cours en vidéo proposé par le bot")
+    await ctx.send("Bienvenue, voici la liste des commandes possible sur le serveur ! \n"+
+    "$help : envoie une liste de question posée par le bot à l'utilisateur \n"+
+    "$help_tips : envoie un exemple d'utilisation sur la commande $help \n"+
+    "$admin : envoie un dm à un admin pour répondre au question de l'utilisateur\n"+
+    "$bonus : envoie un lien bonus pour l'utilisateur \n"+
+    "$cours : envoie la liste de cours proposé \n"+
+    "$tuto : envoie la liste de cours en vidéo proposé par le bot")
+
+# @client.command()
+# async def help(ctx):
+#     await ctx.send(node1)
 
 @client.command()
 async def bonus(ctx):
-    await ctx.send("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    await ctx.send("<https://www.youtube.com/watch?v=iik25wqIuFo>")
 # @client.command()
 # async def super_coucou(ctx, arg):
 #     await ctx.send(arg)
