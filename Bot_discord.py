@@ -4,6 +4,7 @@ from Arbre import *
 import random 
 from random import randint
 import youtube_dl
+from private.config import bot_token
 
 Root = node1
 questionPoser = False
@@ -12,15 +13,15 @@ default_intents = discord.Intents.default()
 default_intents.members = True
 # Défini le prefix nécessaire à utiliser pour appeler les commandes
 client = commands.Bot(intents=default_intents,command_prefix="/")
-# Enlève certaines commandes intégrées de base à discord pour les personaliser
+# Enlève certaines commandes intégrées de base à discord pour pouvoir les personaliser
 client.remove_command("help")
 client.remove_command("kick")
 
-bot_token = "OTc4MjI5MzQ1MzU1MTk4NDY0.GmtTj-.m-DZcC0V-XkPTCNoTMNgyFlxQjn2XbhPXguazU"
-help_channel = "978583666517241906"
-landing_channel = "978583486963257437"
+## Ligne 471 : ID du channel help
+## Ligne 525 : ID du channel general
+## Ligne 535 : Token du bot dans un dossier privé, à changer manuellement si besoin
 
-### Ligne 222 : Début des commandes du bot
+### Ligne 230 : Début des commandes du bot
 
 ## Help
 # Commande /help pour des informations sur les commandes du bot
@@ -28,7 +29,7 @@ landing_channel = "978583486963257437"
 async def help(ctx):
     embed = discord.Embed(title = "Commandes", description = "Utilise /help <commande> pour plus de détails sur une commande")
 
-    embed.add_field(name='Aide', value='aide , aide_tips , back , reset')
+    embed.add_field(name='Aide', value='aide , aide_tips , back , reset , stop')
     embed.add_field(name='DM', value='dm')
     embed.add_field(name='Musique', value='join , kick , play , pause , resume , end')
     embed.add_field(name='Jeux', value='jp , pfc')
@@ -54,15 +55,22 @@ async def aide_tips(ctx):
 
 @help.command()
 async def backconv(ctx):
-    embed = discord.Embed(title = "Retour", description = "Reviens à la question précédente dans la discussion.")
+    embed = discord.Embed(title = "Retour", description = "Reviens à la question précédente dans la discussion")
     embed.add_field(name='**Syntaxe**', value='``back``', inline=False)
 
     await ctx.send(embed=embed)
 
 @help.command()
 async def reset(ctx):
-    embed = discord.Embed(title = "Réinitialisation", description = "Réinitialise la discussion.")
+    embed = discord.Embed(title = "Réinitialisation", description = "Réinitialise la discussion")
     embed.add_field(name='**Syntaxe**', value='``reset``', inline=False)
+
+    await ctx.send(embed=embed)
+
+@help.command()
+async def stop(ctx):
+    embed = discord.Embed(title = "Stop", description = "Arrête la conversation avec le bot")
+    embed.add_field(name='**Syntaxe**', value='``stop``', inline=False)
 
     await ctx.send(embed=embed)
 
@@ -460,7 +468,7 @@ async def on_message(message):
     global temp_root
     global questionPoser
     # C'est le channel où les réponses du bot seront
-    Help_channel = client.get_channel(help_channel)
+    Help_channel = client.get_channel(978583666517241906)
     if questionPoser == True:
         for child in Root.list_child_node:
             if len(Root.list_child_node) < 1:
@@ -514,7 +522,7 @@ async def on_message(message):
 # Quand quelqu'un rejoins le serveur lui indique la commande à entrer pour avoir des indications sur l'utilisation du bot
 @client.event
 async def on_member_join(member):
-    landing = client.get_channel(landing_channel)
+    landing = client.get_channel(978583486963257437)
     await landing.send(f"Bienvenue pour voir les commandes du bot, tapez /help")
 
 # Envoie un message dans le terminal pour dire que le bot est prêt à être utilisé
@@ -523,5 +531,5 @@ async def on_ready():
     print("Le bot est connecté et prêt à être utilisé")
 
 # Commande permettant de connecter son bot au serveur Discord
+# ( Token du bot dans un dossier privé, à changer manuellement si besoin : client.run("votre_token") ) 
 client.run(bot_token)
-
