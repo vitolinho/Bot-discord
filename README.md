@@ -58,7 +58,6 @@ Si vous voulez rejoindre notre serveur discord de test :<br/>
 <hr>
 /dm @qqlun lemessage:<br>
 <img src="https://cdn.discordapp.com/attachments/978297903233781780/981896100342538260/unknown.png" width="auto"></img></br>
-<hr>
 <img src="https://cdn.discordapp.com/attachments/978297903233781780/981896144101703750/unknown.png" width="auto"></img></br>
 <hr>
 back<br>
