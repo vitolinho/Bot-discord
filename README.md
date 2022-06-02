@@ -45,15 +45,14 @@ Si vous voulez rejoindre notre serveur discord de test :<br/>
 - [Steven GODIN](https://github.com/Yvelchrome)
 - [Loïc JIN](https://github.com/Snwolfy)
 
-## Capture d'écran
-
-<img src="https://cdn.discordapp.com/attachments/978297903233781780/981892946750218291/unknown.png" width="50%"></img></br>
-<img src="https://cdn.discordapp.com/attachments/978297903233781780/981895345573343283/unknown.png" width="50%"></img></br>
-<p>
-  <img src="https://cdn.discordapp.com/attachments/978297903233781780/981896100342538260/unknown.png" width="50%"></img>
-  <img src="https://cdn.discordapp.com/attachments/978297903233781780/981896144101703750/unknown.png" width="50%"></img></br>
-</p>
-
 ## Technologie utilisée
 
 ![Python](https://camo.githubusercontent.com/a1b2dac5667822ee0d98ae6d799da61987fd1658dfeb4d2ca6e3c99b1535ebd8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2d3336373041303f7374796c653d666f722d7468652d6261646765266c6f676f3d707974686f6e266c6f676f436f6c6f723d666664643534)
+
+## Capture d'écran
+
+<img src="https://cdn.discordapp.com/attachments/978297903233781780/981892946750218291/unknown.png" width="20em"></img></br>
+<img src="https://cdn.discordapp.com/attachments/978297903233781780/981895345573343283/unknown.png" width="50%"></img></br>
+<img src="https://cdn.discordapp.com/attachments/978297903233781780/981896100342538260/unknown.png" width="50%"></img></br>
+<img src="https://cdn.discordapp.com/attachments/978297903233781780/981896144101703750/unknown.png" width="50%"></img></br>
+
