@@ -47,7 +47,7 @@ Si vous voulez rejoindre notre serveur discord de test :<br/>
 
 #Capture d'écran
 
-<img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt53405c26141beff8/5f21fda671ec397ef9bf0894/V_AGENTS_587x900_KillJoy_.png" height="200px"></img>
+<img src="https://cdn.discordapp.com/attachments/978297903233781780/981892946750218291/unknown.png" height="200px"></img>
 
 ## Technologie utilisée
 
