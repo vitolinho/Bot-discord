@@ -46,92 +46,92 @@ Clonez le repo ou téléchargez le en ZIP puis exécutez le fichier Bot_discord.
 
 ![Python](https://camo.githubusercontent.com/a1b2dac5667822ee0d98ae6d799da61987fd1658dfeb4d2ca6e3c99b1535ebd8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2d3336373041303f7374796c653d666f722d7468652d6261646765266c6f676f3d707974686f6e266c6f676f436f6c6f723d666664643534)
 
-## Capture d'écran
+## Captures d'écran
 
-/help:<br>
-<img src="screenshot\help.png" width="auto"></img></br>
-
-<hr>
-/dm @qqlun lemessage:<br>
-<img src="screenshot\dm1.png" width="auto"></img></br>
-<img src="screenshot\dm2.png" width="auto"></img></br>
+/help<br/>
+<img src="screenshot\help.png" width="auto"></img><br/>
 
 <hr>
-/aide:<br>
-<img src="screenshot\aide\aide_tips.png" width="auto"></img></br>
+/dm @user message<br/>
+<img src="screenshot\dm1.png" width="auto"></img><br/>
+<img src="screenshot\dm2.png" width="auto"></img><br/>
 
 <hr>
-back<br>
-<img src="screenshot\aide\aide_reset.png" width="auto"</img><br>
+/aide<br/>
+<img src="screenshot\aide\aide_tips.png" width="auto"></img><br/>
 
 <hr>
-reset<br>
-<img src="screenshot\aide\aide_back.png" width="auto"</img><br>
+back<br/>
+<img src="screenshot\aide\aide_back.png" width="auto"</img><br/>
 
 <hr>
-stop<br>
-<img src="screenshot\aide\aide_stop.png" width="auto"</img><br>
+reset<br/>
+<img src="screenshot\aide\aide_reset.png" width="auto"</img><br/>
 
 <hr>
-/join<br>
-<img src="screenshot\music\music_join.png" width="auto"</img><br>
+stop<br/>
+<img src="screenshot\aide\aide_stop.png" width="auto"</img><br/>
 
 <hr>
-/play <br>
-<img src="screenshot\music\music_play.png" width="auto"</img><br>
+/join<br/>
+<img src="screenshot\music\music_join.png" width="auto"</img><br/>
 
 <hr>
-/pause <br>
-<img src="screenshot\music\music_pause.png" width="auto"</img><br>
+/play<br/>
+<img src="screenshot\music\music_play.png" width="auto"</img><br/>
 
 <hr>
-/resume <br>
-<img src="screenshot\music\music_resume.png" width="auto"</img><br>
+/pause<br/>
+<img src="screenshot\music\music_pause.png" width="auto"</img><br/>
 
 <hr>
-/end<br>
-<img src="screenshot\music\music_end.png" width="auto"</img><br>
+/resume<br/>
+<img src="screenshot\music\music_resume.png" width="auto"</img><br/>
 
 <hr>
-/leave<br>
-<img src="screenshot\music\music_leave.png" width="auto"</img><br>
+/end<br/>
+<img src="screenshot\music\music_end.png" width="auto"</img><br/>
 
 <hr>
-/jp <br>
-<img src="screenshot\mini_jeux\jp_haut.png" width="auto"</img><br>
-<img src="screenshot\mini_jeux\jp_bas.png" width="auto"</img><br>
-<img src="screenshot\mini_jeux\jp_win.png" width="auto"</img><br>
+/leave<br/>
+<img src="screenshot\music\music_leave.png" width="auto"</img><br/>
 
 <hr>
-/pfc<br>
-<img src="screenshot\mini_jeux\pfc_win.png" width="auto"</img><br>
-<img src="screenshot\mini_jeux\pfc_lose.png" width="auto"</img><br>
-<img src="screenshot\mini_jeux\pfc_egal.png" width="auto"</img><br>
+/jp<br/>
+<img src="screenshot\mini_jeux\jp_haut.png" width="auto"</img><br/>
+<img src="screenshot\mini_jeux\jp_bas.png" width="auto"</img><br/>
+<img src="screenshot\mini_jeux\jp_win.png" width="auto"</img><br/>
 
 <hr>
-/valorant <br>
-<img src="screenshot\bonus\valorant.png" width="auto"</img><br>
+/pfc<br/>
+<img src="screenshot\mini_jeux\pfc_win.png" width="auto"</img><br/>
+<img src="screenshot\mini_jeux\pfc_lose.png" width="auto"</img><br/>
+<img src="screenshot\mini_jeux\pfc_egal.png" width="auto"</img><br/>
 
 <hr>
-/mario <br>
-<img src="screenshot\bonus\mario.png" width="auto"</img><br>
+/valorant<br/>
+<img src="screenshot\bonus\valorant.png" width="auto"</img><br/>
 
 <hr>
-/punch<br>
-<img src="screenshot\bonus\punch.png" width="auto"</img><br>
+/mario<br/>
+<img src="screenshot\bonus\mario.png" width="auto"</img><br/>
 
 <hr>
-/mdr<br>
-<img src="screenshot\bonus\mdr.png" width="auto"</img><br>
+/punch<br/>
+<img src="screenshot\bonus\punch.png" width="auto"</img><br/>
 
 <hr>
-/pc<br>
-<img src="screenshot\bonus\pc.png" width="auto"</img><br>
+/mdr<br/>
+<img src="screenshot\bonus\mdr.png" width="auto"</img><br/>
 
 <hr>
-/front<br>
-<img src="screenshot\bonus\front.png" width="auto"</img><br>
+/pc<br/>
+<img src="screenshot\bonus\pc.png" width="auto"</img><br/>
 
 <hr>
-/back<br>
-<img src="screenshot\bonus\back.png" width="auto"</img><br>
+/front<br/>
+<img src="screenshot\bonus\front.png" width="auto"</img><br/>
+
+<hr>
+/back<br/>
+<img src="screenshot\bonus\back.png" width="auto"</img><br/>
