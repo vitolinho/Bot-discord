@@ -4,7 +4,6 @@ from Arbre import *
 import random 
 from random import randint
 import youtube_dl
-from private.config import bot_token
 
 Root = node1
 questionPoser = False
@@ -17,9 +16,10 @@ client = commands.Bot(intents=default_intents,command_prefix="/")
 client.remove_command("help")
 client.remove_command("kick")
 
+### A changer si vous êtes sur votre propre serveur :
 ## Ligne 471 : ID du channel help
 ## Ligne 525 : ID du channel general
-## Ligne 535 : Token du bot dans un dossier privé, à changer manuellement si besoin
+## Ligne 535 : Token du bot
 
 ### Ligne 230 : Début des commandes du bot
 
@@ -531,5 +531,5 @@ async def on_ready():
     print("Le bot est connecté et prêt à être utilisé")
 
 # Commande permettant de connecter son bot au serveur Discord
-# ( Token du bot dans un dossier privé, à changer manuellement si besoin : client.run("votre_token") ) 
-client.run(bot_token)
+# Token du bot
+client.run("OTc4MjI5MzQ1MzU1MTk4NDY0.GZs78Q.7UmLlz1_W9AbeG9heEEcvXfOp4L0nrARvd8yGk")
