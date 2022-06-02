@@ -16,7 +16,6 @@ client = commands.Bot(intents=default_intents,command_prefix="/")
 # Enlève certaines commandes intégrées de base à discord pour pouvoir les personaliser
 client.remove_command("help")
 client.remove_command("kick")
-TOKEN = "" #VEUILLEZ ENTREZ LE TOKEN DE VOTRE BOT
 
 ## Ligne 471 : ID du channel help
 ## Ligne 525 : ID du channel general
@@ -533,4 +532,4 @@ async def on_ready():
 
 # Commande permettant de connecter son bot au serveur Discord
 # ( Token du bot dans un dossier privé, à changer manuellement si besoin : client.run("votre_token") ) 
-client.run(TOKEN)
+client.run(bot_token)
