@@ -14,16 +14,15 @@ default_intents.members = True
 client = commands.Bot(intents=default_intents,command_prefix="/")
 # Enlève certaines commandes intégrées de base à discord pour pouvoir les personaliser
 client.remove_command("help")
-client.remove_command("kick")
 
 ### A changer si vous êtes sur votre propre serveur :
-## Ligne 471 : ID du channel help
-## Ligne 525 : ID du channel general
-## Ligne 535 : Token du bot
+## Ligne 470 : ID du channel help
+## Ligne 524 : ID du channel general
+## Ligne 534 : Token du bot
 
 ### Ligne 230 : Début des commandes du bot
 
-## Help
+## Hel
 # Commande /help pour des informations sur les commandes du bot
 @client.group(invoke_without_command=True)
 async def help(ctx):
@@ -31,7 +30,7 @@ async def help(ctx):
 
     embed.add_field(name='Aide', value='aide , aide_tips , back , reset , stop')
     embed.add_field(name='DM', value='dm')
-    embed.add_field(name='Musique', value='join , kick , play , pause , resume , end')
+    embed.add_field(name='Musique', value='join , leave , play , pause , resume , end')
     embed.add_field(name='Jeux', value='jp , pfc')
     embed.add_field(name='Bonus', value='bonus , punch , mdr , hi , secret , valorant , mario , pc , back , front')
     embed.add_field(name='Autres', value='suppr , clear')
@@ -91,9 +90,9 @@ async def join(ctx):
     await ctx.send(embed=embed)
 
 @help.command()
-async def kick(ctx):
-    embed = discord.Embed(title = "Bot kick", description = "Fait partir le bot du channel vocal")
-    embed.add_field(name='**Syntaxe**', value='``/kick``', inline=False)
+async def leave(ctx):
+    embed = discord.Embed(title = "Bot leave", description = "Fait partir le bot du channel vocal")
+    embed.add_field(name='**Syntaxe**', value='``/leave``', inline=False)
 
     await ctx.send(embed=embed)
 
@@ -307,19 +306,19 @@ async def clear(ctx, amount=10000):
 # Pourcentage de cool
 @client.command(pass_context=True)
 async def pc(ctx):
-    embed = discord.Embed(title="pourcentage de cool", description=f"Tu es cool à {random.randrange(101)} % {ctx.author.mention}.", color = discord.Color.random())
+    embed = discord.Embed(title="pourcentage de cool", description=f"Tu es cool à {random.randrange(101)} % {ctx.author.mention}.")
     await ctx.send(embed = embed)
 
 # Pourcentage de back end
 @client.command(pass_context=True)
 async def back(ctx):
-    embed = discord.Embed(title="Calculateur de Back-end dans le sang", description=f"Tu es Back-end à {random.randrange(101)} % {ctx.author.mention}.", color= discord.Color.purple())
+    embed = discord.Embed(title="Calculateur de Back-end dans le sang", description=f"Tu es Back-end à {random.randrange(101)} % {ctx.author.mention}.")
     await ctx.send(embed=embed)
 
 # Pourcentage de front end
 @client.command(pass_context=True)
 async def front(ctx):
-    embed = discord.Embed(title="Calculateur de Front-end dans le sang", description=f"Tu es Front-end à {random.randrange(101)} % {ctx.author.mention}.", color= discord.Color.orange())
+    embed = discord.Embed(title="Calculateur de Front-end dans le sang", description=f"Tu es Front-end à {random.randrange(101)} % {ctx.author.mention}.")
     await ctx.send(embed=embed)
 
 ## Musique
@@ -332,9 +331,9 @@ async def join(ctx):
     else:
         await ctx.send("Tu n'es pas connecté au channel vocal !")
 
-# kick
+# leave
 @client.command(pass_context=True)
-async def kick(ctx):
+async def leave(ctx):
     if (ctx.voice_client):
         await ctx.guild.voice_client.disconnect()
         await ctx.send("A plus dans le bus !")
@@ -532,4 +531,4 @@ async def on_ready():
 
 # Commande permettant de connecter son bot au serveur Discord
 # Token du bot
-client.run("OTc4MjI5MzQ1MzU1MTk4NDY0.G7UM5_.pupvvkU7B-otrqtyFhZB0EBneSB8v0iLLO5IrA")
+client.run("OTc4MjI5MzQ1MzU1MTk4NDY0.GPwcuP.PCxrgZxv7vbJP_HQnO7w3R_uwFQn44sFjuj1QM")
