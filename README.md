@@ -51,19 +51,66 @@ Si vous voulez rejoindre notre serveur discord de test :<br/>
 
 ## Capture d'écran
 /help:<br>
-<img src="https://cdn.discordapp.com/attachments/978297903233781780/981892946750218291/unknown.png" width="auto"></img></br>
+<img src="IMG /HELP" width="auto"></img></br>
 <hr>
 /aide:<br>
-<img src="https://cdn.discordapp.com/attachments/978297903233781780/981895345573343283/unknown.png" width="auto"></img></br>
+<img src="IMG /AIDE" width="auto"></img></br>
 <hr>
 /dm @qqlun lemessage:<br>
-<img src="https://cdn.discordapp.com/attachments/978297903233781780/981896100342538260/unknown.png" width="auto"></img></br>
-<img src="https://cdn.discordapp.com/attachments/978297903233781780/981896144101703750/unknown.png" width="auto"></img></br>
+<img src="IMG ¨/DM" width="auto"></img></br>
+<img src="IMG PREUVE QUE TU RECOIS UN DM DU BOT" width="auto"></img></br>
 <hr>
 back<br>
-<img src="https://cdn.discordapp.com/attachments/978297903233781780/981897352551989268/unknown.png" width="auto"</img><br>
+<img src="IMG RESET " width="auto"</img><br>
 <hr>
 reset<br>
-<img src="https://cdn.discordapp.com/attachments/978297903233781780/981897495460343839/unknown.png" width="auto"</img><br>
+<img src="IMG BACK" width="auto"</img><br>
 <hr>
-
+/valorant <br>
+<img src="IMG /VALORANT" width="auto"</img><br>
+<hr>
+/mario <br>
+<img src="IMG /MARIO" width="auto"</img><br>
+<hr>
+/join<br>
+<img src="IMG /join" width="auto"</img><br>
+<hr>
+/play <br>
+<img src="IMG /play" width="auto"</img><br>
+<hr>
+/pause <br>
+<img src="IMG /pause" width="auto"</img><br>
+<hr>
+/resume <br>
+<img src="IMG /resume" width="auto"</img><br>
+<hr>
+/end<br>
+<img src="IMG /end" width="auto"</img><br>
+<hr>
+/kick<br>
+<img src="IMG /kick" width="auto"</img><br>
+<hr>
+/jp <br>
+<img src="IMG /jp plus haut" width="auto"</img><br>
+<img src="IMG /jp plus bas" width="auto"</img><br>
+<img src="IMG /jp GAGNé" width="auto"</img><br>
+<hr>
+/pfc<br>
+<img src="IMG /pfc gagné" width="auto"</img><br>
+<img src="IMG /pfc perdu" width="auto"</img><br>
+<img src="IMG /pfc égalité" width="auto"</img><br>
+<hr>
+/punch<br>
+<img src="IMG /punch" width="auto"</img><br>
+<hr>
+/mdr<br>
+<img src="IMG /mdr" width="auto"</img><br>
+<hr>
+/pc<br>
+<img src="IMG /pc" width="auto"</img><br>
+<hr>
+/front<br>
+<img src="IMG /front" width="auto"</img><br>
+<hr>
+/back<br>
+<img src="IMG /back" width="auto"</img><br>
