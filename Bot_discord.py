@@ -532,4 +532,4 @@ async def on_ready():
 
 # Commande permettant de connecter son bot au serveur Discord
 # Token du bot
-client.run("OTc4MjI5MzQ1MzU1MTk4NDY0.GZs78Q.7UmLlz1_W9AbeG9heEEcvXfOp4L0nrARvd8yGk")
+client.run("OTc4MjI5MzQ1MzU1MTk4NDY0.G7UM5_.pupvvkU7B-otrqtyFhZB0EBneSB8v0iLLO5IrA")
