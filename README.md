@@ -22,25 +22,29 @@ Téléchager les fichiers Arbre.py et Bot_discord.py puis exécuter le fichier B
 
 ## Fonctionnalités
 
--  Menu (lancer une partie, quitter, voir les crédits, voir les règles du jeu).
--  Donner un nom à notre personnage avant de commencer la partie.
--  Possibilité de déplacer le héro de case en case.
--  Le déplacement se fait via les commandes: "nord", "sud", "est", "ouest" . 
--  Des objets sont nécessaires pour battre des maladies sinon on meurt et la partie est finie.
--  Nous rencontrons un personnage non-joueur (pnj).
--  Lors de cette rencontre une texte s'affiche pour présenter quelque-chose. 
--  Création d'un inventaire qu'on affiche.
--  Combat contre des maladies et un boss final.
--  Sauvegarde de notre partie où on a échoué à la partie précédente.
+- Pouvoir faire une petite conversation afin de cibler le besoin de l’utilisateur
+- Une commande de demande d’aide sur l’utilisation du bot
+- Une commande de retour en arrière si on a fait le mauvais choix
+- Une commande de reset pour recommencer la conversation
+- Une commande permettant d’appeler un modérateur pour avoir de l’aide
+
+## Fonctionnalités Bonus
+
+- Des commandes permettant de jouer de la musique ou un son
+- Une commande permettant de jouer au juste prix
+- Une commande permettant de jouer au pierre feuille ciseaux
+- Une commande permettant de savoir son % de cool
+- Une commande permettant de savoir son % de front
+- Une commande permettant de savoir son % de back
+- Plusieurs commandes afficanht différens GIFs
 
 ## Equipe
 
 - [Vitomir LACES](https://github.com/vitolinho) 
-- [Alex GUIRO](https://github.com/alexoo1)
-- [Maguette DIOUF](https://github.com/Maxdiouf)
-- [Abderame DIARRA](https://github.com/AbdeDev)
-- [Yaya FANE](https://github.com/layayance)
-- [Abdoulaye DIOP](https://github.com/layediop)
+- [Ewan QUESTIER](https://github.com/xWane)
+- [Steven GODIN](https://github.com/Yvelchrome)
+- [Loïc JIN](https://github.com/Snwolfy)
+
 
 ## Technologie utilisée
 
