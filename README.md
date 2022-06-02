@@ -9,9 +9,7 @@ Dans le cadre du cours de python dans notre [école](https://www.hetic.net/), no
 pip install --upgrade youtube-dl<br/>
 pip install ffmpeg-python | Tutoriel installation ffmpeg si besoin : https://www.youtube.com/watch?v=UDIMVp4jWXo<br/>
 pip install PyNaCl<br/><br/>
-Clonez le repo ou téléchargez le en ZIP puis exécutez le fichier Bot_discord.py !<br/>( Il sera nécessaire de remplacer le token du bot par le votre ( ligne 534 dans Bot_discord.py ) ainsi que les ID des différents channels ( ligne 470 et 524 ) si vous voulez le tester sur votre propre serveur )<br/><br/>
-Si vous voulez rejoindre notre serveur discord de test :<br/>
-[![Discord](https://discordapp.com/api/guilds/978583486963257434/widget.png?style=shield)](https://discord.gg/JsUCn6skXf)<br/>
+Clonez le repo ou téléchargez le en ZIP puis exécutez le fichier Bot_discord.py !<br/>(Il sera nécessaire de remplacer le token du bot par le votre ainsi que les ID des différents channels ( Lignes : 21 / 23 / 25 ) pour le tester sur votre propre serveur)<br/><br/>
 
 ## Objectifs du projet
 
