@@ -17,15 +17,6 @@ Puis double cliquez sur le fichier Rpg.py<br/>
 - Appliquer tous ce qu'on nous a appris en 2/3 mois de programmation.
 - Apprendre à travailler en équipe en échangeant des versions de codes et les intégrer harmonieusement. 
 
-## Equipe
-
-- [Vitomir LACES](https://github.com/vitolinho) 
-- [Alex GUIRO](https://github.com/alexoo1)
-- [Maguette DIOUF](https://github.com/Maxdiouf)
-- [Abderame DIARRA](https://github.com/AbdeDev)
-- [Yaya FANE](https://github.com/layayance)
-- [Abdoulaye DIOP](https://github.com/layediop)
-
 ## Fonctionnalités
 
 -  Menu (lancer une partie, quitter, voir les crédits, voir les règles du jeu).
@@ -38,6 +29,15 @@ Puis double cliquez sur le fichier Rpg.py<br/>
 -  Création d'un inventaire qu'on affiche.
 -  Combat contre des maladies et un boss final.
 -  Sauvegarde de notre partie où on a échoué à la partie précédente.
+
+## Equipe
+
+- [Vitomir LACES](https://github.com/vitolinho) 
+- [Alex GUIRO](https://github.com/alexoo1)
+- [Maguette DIOUF](https://github.com/Maxdiouf)
+- [Abderame DIARRA](https://github.com/AbdeDev)
+- [Yaya FANE](https://github.com/layayance)
+- [Abdoulaye DIOP](https://github.com/layediop)
 
 ## Technologie utilisée
 
