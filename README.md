@@ -10,7 +10,7 @@ pip install --upgrade youtube-dl<br/>
 pip install ffmpeg-python<br/>
 pip install windows-curses<br/>
 pip install -U discord.py[voice]<br/><br/>
-Clonez le repo ou Téléchargez le en ZIP puis exécuter le fichier Bot_discord.py ! ( Il sera nécessaire de remplacer le token du bot par le votre si vous voulez le tester sur votre propre serveur )<br/><br/>
+Clonez le repo ou Téléchargez le en ZIP puis exécuter le fichier Bot_discord.py !<br/>( Il sera nécessaire de remplacer le token du bot par le votre si vous voulez le tester sur votre propre serveur )<br/><br/>
 Si vous voulez rejoindre notre serveur discord de test :<br/>
 ![Discord Shield](https://discordapp.com/api/guilds/[978583486963257434]/widget.png?style=shield)
 
@@ -44,6 +44,10 @@ Si vous voulez rejoindre notre serveur discord de test :<br/>
 - [Ewan QUESTIER](https://github.com/xWane)
 - [Steven GODIN](https://github.com/Yvelchrome)
 - [Loïc JIN](https://github.com/Snwolfy)
+
+#Capture d'écran
+
+<img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt53405c26141beff8/5f21fda671ec397ef9bf0894/V_AGENTS_587x900_KillJoy_.png" height="200px"></img>
 
 ## Technologie utilisée
 
