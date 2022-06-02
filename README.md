@@ -45,9 +45,9 @@ Si vous voulez rejoindre notre serveur discord de test :<br/>
 - [Steven GODIN](https://github.com/Yvelchrome)
 - [Loïc JIN](https://github.com/Snwolfy)
 
-#Capture d'écran
+## Capture d'écran
 
-<img src="https://cdn.discordapp.com/attachments/978297903233781780/981892946750218291/unknown.png" width="50%"></img>
+<img src="https://cdn.discordapp.com/attachments/978297903233781780/981892946750218291/unknown.png" width="50%"></img></br>
 
 ## Technologie utilisée
 
