@@ -47,7 +47,7 @@ Si vous voulez rejoindre notre serveur discord de test :<br/>
 
 #Capture d'écran
 
-<img src="https://cdn.discordapp.com/attachments/978297903233781780/981892946750218291/unknown.png" height="200px"></img>
+<img src="https://cdn.discordapp.com/attachments/978297903233781780/981892946750218291/unknown.png" width="50%"></img>
 
 ## Technologie utilisée
 
