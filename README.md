@@ -64,6 +64,6 @@ back<br>
 <img src="https://cdn.discordapp.com/attachments/978297903233781780/981897352551989268/unknown.png" width="auto"</img><br>
 <hr>
 reset<br>
-<img src="https://cdn.discordapp.com/attachments/978297903233781780/981897495460343839/unknown.png" width="auto">/img><br>
+<img src="https://cdn.discordapp.com/attachments/978297903233781780/981897495460343839/unknown.png" width="auto"</img><br>
 <hr>
 
