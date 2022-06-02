@@ -47,7 +47,7 @@ Téléchager les fichiers Arbre.py et Bot_discord.py puis exécuter le fichier B
 
 #CAPtuire d'écran
 
-<img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt53405c26141beff8/5f21fda671ec397ef9bf0894/V_AGENTS_587x900_KillJoy_.png"></img>
+<img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt53405c26141beff8/5f21fda671ec397ef9bf0894/V_AGENTS_587x900_KillJoy_.png" height="200px"></img>
 
 
 ## Technologie utilisée
