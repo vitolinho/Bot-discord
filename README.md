@@ -49,8 +49,10 @@ Si vous voulez rejoindre notre serveur discord de test :<br/>
 
 <img src="https://cdn.discordapp.com/attachments/978297903233781780/981892946750218291/unknown.png" width="50%"></img></br>
 <img src="https://cdn.discordapp.com/attachments/978297903233781780/981895345573343283/unknown.png" width="50%"></img></br>
-<img src="https://cdn.discordapp.com/attachments/978297903233781780/981896100342538260/unknown.png" width="50%"></img>
-<img src="https://cdn.discordapp.com/attachments/978297903233781780/981896144101703750/unknown.png" width="50%"></img></br>
+<p>
+  <img src="https://cdn.discordapp.com/attachments/978297903233781780/981896100342538260/unknown.png" width="50%"></img>
+  <img src="https://cdn.discordapp.com/attachments/978297903233781780/981896144101703750/unknown.png" width="50%"></img></br>
+</p>
 
 ## Technologie utilisée
 
