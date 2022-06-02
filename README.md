@@ -16,8 +16,8 @@ Téléchager les fichiers Arbre.py et Bot_discord.py puis exécuter le fichier B
 
 ## Objectifs du projet
 
-- Créer un jeu Rpg au tour par tour sur console à l'aide de Python.
-- Appliquer tous ce qu'on nous a appris en 2/3 mois de programmation.
+- Créer un Bot discord à l'aide de Python.
+- Appliquer tous ce qu'on nous a appris en Python durant l'année.
 - Apprendre à travailler en équipe en échangeant des versions de codes et les intégrer harmonieusement. 
 
 ## Fonctionnalités
