@@ -1,15 +1,9 @@
-from ast import Await
-from email.policy import default
-from logging import root
-from tkinter import E
 import discord
 from discord.ext import commands
 from Arbre import *
 import random 
-from discord import colour
-from discord.embeds import Embed
-import youtube_dl
 from random import randint
+import youtube_dl
 
 Root = node1
 questionPoser = False
@@ -18,19 +12,23 @@ default_intents = discord.Intents.default()
 default_intents.members = True
 # Défini le prefix nécessaire à utiliser pour appeler les commandes
 client = commands.Bot(intents=default_intents,command_prefix="/")
-# Enlève le /help intégré de base à discord pour le personaliser
+# Enlève certaines commandes intégrées de base à discord pour les personaliser
 client.remove_command("help")
+client.remove_command("kick")
 
+bot_token = "OTc4MjI5MzQ1MzU1MTk4NDY0.GmtTj-.m-DZcC0V-XkPTCNoTMNgyFlxQjn2XbhPXguazU"
+help_channel = "978583666517241906"
+landing_channel = "978583486963257437"
 
-## Ligne 225 : Début des commandes du bot
+### Ligne 222 : Début des commandes du bot
 
-# help
-# Commande help pour des informations sur les commandes du bot
+## Help
+# Commande /help pour des informations sur les commandes du bot
 @client.group(invoke_without_command=True)
 async def help(ctx):
     embed = discord.Embed(title = "Commandes", description = "Utilise /help <commande> pour plus de détails sur une commande")
 
-    embed.add_field(name='Aide', value='aide , aide_tips , backconv , reset')
+    embed.add_field(name='Aide', value='aide , aide_tips , back , reset')
     embed.add_field(name='DM', value='dm')
     embed.add_field(name='Musique', value='join , kick , play , pause , resume , end')
     embed.add_field(name='Jeux', value='jp , pfc')
@@ -39,7 +37,7 @@ async def help(ctx):
 
     await ctx.send(embed=embed)
 
-# Help Aide
+# Help - Aide
 @help.command()
 async def aide(ctx):
     embed = discord.Embed(title = "Aide", description = "Envoie une liste de questions posées par le bot à l'utilisateur")
@@ -49,26 +47,26 @@ async def aide(ctx):
 
 @help.command()
 async def aide_tips(ctx):
-    embed = discord.Embed(title = "Aide tips", description = "Envoie un exemple de conversation avec le bot")
+    embed = discord.Embed(title = "Aide - Exemple d'utilisation", description = "Envoie un exemple de conversation avec le bot")
     embed.add_field(name='**Syntaxe**', value='``/aide_tips``', inline=False)
 
     await ctx.send(embed=embed)
 
 @help.command()
 async def backconv(ctx):
-    embed = discord.Embed(title = "Back", description = "Reviens une case avant dans la discussion.")
+    embed = discord.Embed(title = "Retour", description = "Reviens à la question précédente dans la discussion.")
     embed.add_field(name='**Syntaxe**', value='``back``', inline=False)
 
     await ctx.send(embed=embed)
 
 @help.command()
 async def reset(ctx):
-    embed = discord.Embed(title = "Reset", description = "Reset la discussion.")
+    embed = discord.Embed(title = "Réinitialisation", description = "Réinitialise la discussion.")
     embed.add_field(name='**Syntaxe**', value='``reset``', inline=False)
 
     await ctx.send(embed=embed)
 
-# Help DM
+# Help - DM
 @help.command()
 async def dm(ctx):
     embed = discord.Embed(title = "DM", description = "Envoie un message privé à la personne tag")
@@ -76,7 +74,7 @@ async def dm(ctx):
 
     await ctx.send(embed=embed)
 
-# Help Musique
+# Help - Musique
 @help.command()
 async def join(ctx):
     embed = discord.Embed(title = "Bot join", description = "Fait venir le bot dans le channel vocal")
@@ -86,40 +84,40 @@ async def join(ctx):
 
 @help.command()
 async def kick(ctx):
-    embed = discord.Embed(title = "Kick", description = "Fait partir le bot du channel vocal")
+    embed = discord.Embed(title = "Bot kick", description = "Fait partir le bot du channel vocal")
     embed.add_field(name='**Syntaxe**', value='``/kick``', inline=False)
 
     await ctx.send(embed=embed)
 
 @help.command()
 async def play(ctx):
-    embed = discord.Embed(title = "Play", description = "Le bot joue le lien envoyé")
+    embed = discord.Embed(title = "Bot play music", description = "Le bot joue le lien envoyé")
     embed.add_field(name='**Syntaxe**', value='``/play lien_youtube``', inline=False)
 
     await ctx.send(embed=embed)
 
 @help.command()
 async def pause(ctx):
-    embed = discord.Embed(title = "Pause", description = "Met en pause la musique en cours")
+    embed = discord.Embed(title = "Bot pause music", description = "Met en pause la musique en cours")
     embed.add_field(name='**Syntaxe**', value='``/pause``', inline=False)
 
     await ctx.send(embed=embed)
 
 @help.command()
 async def resume(ctx):
-    embed = discord.Embed(title = "Resume", description = "Reprends la musique en cours")
+    embed = discord.Embed(title = "Bot resume music", description = "Reprends la musique en cours")
     embed.add_field(name='**Syntaxe**', value='``/resume``', inline=False)
 
     await ctx.send(embed=embed)
 
 @help.command()
 async def end(ctx):
-    embed = discord.Embed(title = "End", description = "Met fin à la musique")
+    embed = discord.Embed(title = "Bot end music", description = "Met fin à la musique")
     embed.add_field(name='**Syntaxe**', value='``/end``', inline=False)
 
     await ctx.send(embed=embed)
 
-# Help Jeux
+# Help - Jeux
 @help.command()
 async def jp(ctx):
     embed = discord.Embed(title = "Juste Prix", description = "Jeu du juste prix existant entre 1 et 100")
@@ -134,7 +132,7 @@ async def pfc(ctx):
 
     await ctx.send(embed=embed)
 
-# Help Bonus
+# Help - Bonus
 @help.command()
 async def bonus(ctx):
     embed = discord.Embed(title = "Bonus", description = "Envoie un lien bonus")
@@ -205,7 +203,7 @@ async def front(ctx):
 
     await ctx.send(embed=embed)
 
-# Help Autres
+# Help - Autres
 @help.command()
 async def suppr(ctx):
     embed = discord.Embed(title = "Suppr", description = "Supprime 'nombre' message dans le channel")
@@ -220,18 +218,15 @@ async def clear(ctx):
 
     await ctx.send(embed=embed)
 
-help_img = ["https://cdn.discordapp.com/attachments/978230022735286315/981502946711851008/unknown.png"] 
 
 ## Début des commandes du bot
 # aide_tips
 @client.command(pass_context=True)
 async def aide_tips(ctx):
-    embed = discord.Embed(
-        color = (discord.Colour.random()),
-        description = f"{ctx.author.mention} Voici un exemple de conversation avec le Bot"
-    )
-    embed.set_image(url=(random.choice(help_img)))
-    await ctx.send(embed = embed)
+    embed = discord.Embed(description = f"{ctx.author.mention} Voici un exemple de conversation avec le Bot")
+    file = discord.File("screenshot/aide_tips.png", filename="image.png")
+    embed.set_image(url=('attachment://image.png'))
+    await ctx.send(file=file, embed=embed)
 
 # punch
 punch_gifs = ["https://c.tenor.com/1Sd82w25kacAAAAC/one-punch-man-punch.gif", "https://c.tenor.com/CLj5PsMhCLkAAAAC/naruto-sasuke.gif", "https://c.tenor.com/7JVff7vMCVkAAAAC/face-punch-punch.gif"]
@@ -239,23 +234,16 @@ punch_names = ["vous met une grosse golden chargé à 80 %"]
 
 @client.command(pass_context=True)
 async def punch(ctx):
-    embed = discord.Embed(
-        color = (discord.Colour.random()),
-        description = f"{ctx.author.mention} {(random.choice(punch_names))}"
-    )
+    embed = discord.Embed(description = f"{ctx.author.mention} {(random.choice(punch_names))}")
     embed.set_image(url=(random.choice(punch_gifs)))
     await ctx.send(embed = embed)
 
+# troll
 troll_img= ["http://assets.stickpng.com/images/580b585b2edbce24c47b2a2a.png"]
 
-# troll
 @client.command(pass_context=True)
 async def secret(ctx):
-    embed = discord.Embed(
-        title = "Trolololololooo",
-        color = (discord.Colour.purple()), #choisir la couleur que l'on souhaite Colour.couleurquonveut()
-        description = f"{ctx.author.mention} y'a pas de secret travaille dur !"
-    )
+    embed = discord.Embed(title = "Trolololololooo", description = f"{ctx.author.mention} y'a pas de secret travaille dur !")
     embed.set_image(url=(random.choice(troll_img)))
     await ctx.send(embed = embed)
 
@@ -264,10 +252,7 @@ mdr_gifs = ["https://c.tenor.com/wIxFiobxxbIAAAAd/john-jonah-jameson-lol.gif","h
 
 @client.command(pass_context=True)
 async def mdr(ctx):
-    embed = discord.Embed(
-        color = (discord.Colour.random()), #choisir la couleur que l'on souhaite Colour.couleurquonveut()
-        description = f"{ctx.author.mention}"
-    )
+    embed = discord.Embed(description = f"{ctx.author.mention}")
     embed.set_image(url=(random.choice(mdr_gifs)))
     await ctx.send(embed = embed)
 
@@ -276,10 +261,7 @@ hi_gifs = ["https://c.tenor.com/pvFJwncehzIAAAAM/hello-there-private-from-pengui
 
 @client.command(pass_context=True)
 async def hi(ctx):
-    embed = discord.Embed(
-        color = (discord.Colour.random()),
-        description = f"Salut {ctx.author.mention}!"
-    )
+    embed = discord.Embed(description = f"Salut {ctx.author.mention}!")
     embed.set_image(url=(random.choice(hi_gifs)))
     await ctx.send(embed = embed)
 
@@ -288,11 +270,7 @@ valorant_png = ["https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bl
 
 @client.command(pass_context=True)
 async def valorant(ctx):
-    embed = discord.Embed(
-        title = "Valorant",
-        color = (discord.Colour.random()),
-        description = f"{ctx.author.mention} est :"
-    )
+    embed = discord.Embed(title = "Valorant", description = f"{ctx.author.mention} est :")
     embed.set_image(url=(random.choice(valorant_png)))
     await ctx.send(embed = embed)
 
@@ -301,7 +279,7 @@ mario_png = ["https://w7.pngwing.com/pngs/979/298/png-transparent-super-mario-br
 
 @client.command(pass_context=True)
 async def mario(ctx):
-    embed = discord.Embed(title = "Mario's World", color = (discord.Colour.random()), description = f"{ctx.author.mention} est :")
+    embed = discord.Embed(title = "Mario's World", description = f"{ctx.author.mention} est :")
     embed.set_image(url=(random.choice(mario_png)))
     await ctx.send(embed = embed)
 
@@ -318,19 +296,19 @@ async def suppr(ctx, arg):
 async def clear(ctx, amount=10000):
     await ctx.channel.purge(limit=amount)
 
-# pourcentage de cool
+# Pourcentage de cool
 @client.command(pass_context=True)
 async def pc(ctx):
     embed = discord.Embed(title="pourcentage de cool", description=f"Tu es cool à {random.randrange(101)} % {ctx.author.mention}.", color = discord.Color.random())
     await ctx.send(embed = embed)
 
-# pourcentage de back end
+# Pourcentage de back end
 @client.command(pass_context=True)
 async def back(ctx):
     embed = discord.Embed(title="Calculateur de Back-end dans le sang", description=f"Tu es Back-end à {random.randrange(101)} % {ctx.author.mention}.", color= discord.Color.purple())
     await ctx.send(embed=embed)
 
-# pourcentage de front end
+# Pourcentage de front end
 @client.command(pass_context=True)
 async def front(ctx):
     embed = discord.Embed(title="Calculateur de Front-end dans le sang", description=f"Tu es Front-end à {random.randrange(101)} % {ctx.author.mention}.", color= discord.Color.orange())
@@ -382,6 +360,7 @@ async def resume(ctx):
     await ctx.send(f" {ctx.author.mention} C'est reparti zin !")
     await ctx.voice_client.resume()
 
+# stop 
 @client.command(pass_context=True)
 async def end(ctx):
     await ctx.send(f" {ctx.author.mention} J'ai arrété la musique entièrement zin")
@@ -467,10 +446,7 @@ async def dm(ctx, user:discord.User, *, message=None):
     message = message
     await user.send(message)
 
-# Envoie un message dans le terminal pour dire que le bot est prêt à être utilisé
-@client.event
-async def on_ready():
-    print("Le Bot est connecté")
+
 
 temp_root = []
 i = 0
@@ -483,9 +459,8 @@ async def on_message(message):
     global Root
     global temp_root
     global questionPoser
-    # c'est le channel où les réponses du bot seront
-    # changer '978272464683540530' en fonction de son channel
-    Help_channel = client.get_channel(978583666517241906)
+    # C'est le channel où les réponses du bot seront
+    Help_channel = client.get_channel(help_channel)
     if questionPoser == True:
         for child in Root.list_child_node:
             if len(Root.list_child_node) < 1:
@@ -519,13 +494,6 @@ async def on_message(message):
         temp_root.pop()
         print(child.question)
         await Help_channel.send(child.question)
-#  On arrête les questions du bot
-    if message.content == "stop":
-        Root = node1
-        questionPoser = False
-        temp_root.clear()
-        i = 0
-        await Help_channel.send("Au revoir ! ")
 #  On revient à la première question
     if message.content == "reset":
         Root = node1
@@ -533,15 +501,27 @@ async def on_message(message):
         i = 0
         await Help_channel.send(node1.question)
         print(Root)
+#  On arrête les questions du bot
+    if message.content == "stop":
+        Root = node1
+        questionPoser = False
+        temp_root.clear()
+        i = 0
+        await Help_channel.send("Au revoir ! ")
 
     await client.process_commands(message)
 
+# Quand quelqu'un rejoins le serveur lui indique la commande à entrer pour avoir des indications sur l'utilisation du bot
 @client.event
 async def on_member_join(member):
-    truc = client.get_channel(978234499177529364)
-    await truc.send(f"Bienvenue pour voir les commandes du bot, tapez /help")
+    landing = client.get_channel(landing_channel)
+    await landing.send(f"Bienvenue pour voir les commandes du bot, tapez /help")
 
+# Envoie un message dans le terminal pour dire que le bot est prêt à être utilisé
+@client.event
+async def on_ready():
+    print("Le bot est connecté et prêt à être utilisé")
 
-# commande permettant de connecter son bot au serveur Discord
-# changer par rapport à son bot 'OTc4MjI5MzQ1MzU1MTk4NDY0.GQQW_r.r8xPYJiyOwtskNhupCanrq5FDGKNmY8fbLVgQI'
-client.run("OTc4MjI5MzQ1MzU1MTk4NDY0.GmtTj-.m-DZcC0V-XkPTCNoTMNgyFlxQjn2XbhPXguazU")
+# Commande permettant de connecter son bot au serveur Discord
+client.run(bot_token)
+
