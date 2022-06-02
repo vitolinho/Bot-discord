@@ -12,7 +12,7 @@ pip install windows-curses<br/>
 pip install -U discord.py[voice]<br/><br/>
 Clonez le repo ou téléchargez le en ZIP puis exécutez le fichier Bot_discord.py !<br/>( Il sera nécessaire de remplacer le token du bot par le votre si vous voulez le tester sur votre propre serveur )<br/><br/>
 Si vous voulez rejoindre notre serveur discord de test :<br/>
-![Discord](https://discordapp.com/api/guilds/978583486963257434/widget.png?style=shield)<br/>
+[![Discord](https://discordapp.com/api/guilds/978583486963257434/widget.png?style=shield)](https://discord.gg/JsUCn6skXf)<br/>
 
 ## Objectifs du projet
 
