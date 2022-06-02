@@ -6,10 +6,13 @@
 Dans le cadre du cours de python dans notre [école](https://www.hetic.net/), nous avons eu à réaliser un Bot Discord.<br/>
 
 
-## Lancer le jeu
+## Lancer le Bot Discord
 
-Double cliquez sur le dossier game<br/>
-Puis double cliquez sur le fichier Rpg.py<br/> 
+pip install --upgrade youtube-dl<br>
+pip install ffmpeg-python<br>
+pip install windows-curses<br><br>
+pip install -U discord.py[voice]<br/>
+Téléchager les fichiers Arbre.py et Bot_discord.py puis exécuter le fichier Bot_discord.py !<br/> 
 
 ## Objectifs du projet
 
