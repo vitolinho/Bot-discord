@@ -1,24 +1,24 @@
 ### <p align="center"> Bot Discord en Python • Vadiga</p>
 
-
-
 ## Pourquoi
-Dans le cadre du cours de python dans notre [école](https://www.hetic.net/), nous avons eu à réaliser un Bot Discord.<br/>
 
+Dans le cadre du cours de python dans notre [école](https://www.hetic.net/), nous avons eu à réaliser un Bot Discord.<br/>
 
 ## Lancer le Bot Discord
 
-pip install --upgrade youtube-dl<br>
-pip install ffmpeg-python<br>
-pip install windows-curses<br><br>
-pip install -U discord.py[voice]<br/>
-Téléchager les fichiers Arbre.py et Bot_discord.py puis exécuter le fichier Bot_discord.py !<br/> 
+pip install --upgrade youtube-dl<br/>
+pip install ffmpeg-python<br/>
+pip install windows-curses<br/>
+pip install -U discord.py[voice]<br/><br/>
+Clonez le repo ou Téléchargez le en ZIP puis exécuter le fichier Bot_discord.py ! ( Il sera nécessaire de remplacer le token du bot par le votre si vous voulez le tester sur votre propre serveur )<br/><br/>
+Si vous voulez rejoindre notre serveur discord de test :<br/>
+![Discord Shield](https://discordapp.com/api/guilds/[978583486963257434]/widget.png?style=shield)
 
 ## Objectifs du projet
 
 - Créer un Bot discord à l'aide de Python.
-- Appliquer tous ce qu'on nous a appris en Python durant l'année.
-- Apprendre à travailler en équipe en échangeant des versions de codes et les intégrer harmonieusement. 
+- Appliquer tout ce qu'on nous a appris en Python durant l'année.
+- Apprendre à travailler en équipe en échangeant des versions de codes et les intégrer harmonieusement.
 
 ## Fonctionnalités
 
@@ -36,15 +36,14 @@ Téléchager les fichiers Arbre.py et Bot_discord.py puis exécuter le fichier B
 - Une commande permettant de savoir son % de cool
 - Une commande permettant de savoir son % de front
 - Une commande permettant de savoir son % de back
-- Plusieurs commandes afficanht différens GIFs
+- Plusieurs commandes affichant différents GIFs
 
 ## Equipe
 
-- [Vitomir LACES](https://github.com/vitolinho) 
+- [Vitomir LACES](https://github.com/vitolinho)
 - [Ewan QUESTIER](https://github.com/xWane)
 - [Steven GODIN](https://github.com/Yvelchrome)
 - [Loïc JIN](https://github.com/Snwolfy)
-
 
 ## Technologie utilisée
 
