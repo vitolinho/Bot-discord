@@ -35,41 +35,41 @@ node1.insert_node(Node("Sur quoi ? ( **variables** , **fontions** , **classes** 
 
 # Choix précis sur php, python ou javascript
 node1.insert_node(Node("Sur quel langage ( **Python** , **JavaScript** , **PHP** )?",["classes"]),"Sur quoi ? ( **variables** , **fontions** , **classes** , **listes** , **boucles** , **conditions** )")
-node1.insert_node(Node("Sur quel langage ( **Python** , **JavaScript** , **PHP** )?",["fonctions"]),"Sur quoi ? ( **variables** , **fontions** , **classes** , **listes** , **boucles** , **conditions** )")
-node1.insert_node(Node("Sur quel langage ( **Python** , **JavaScript** , **PHP** )?",["listes"]),"Sur quoi ? ( **variables** , **fontions** , **classes** , **listes** , **boucles** , **conditions** )")
-node1.insert_node(Node("Sur quel langage ( **Python** , **JavaScript** , **PHP** )?",["variables"]),"Sur quoi ? ( **variables** , **fontions** , **classes** , **listes** , **boucles** , **conditions** )")
-node1.insert_node(Node("Sur quel langage ( **Python** , **JavaScript** , **PHP** )?",["boucles"]),"Sur quoi ? ( **variables** , **fontions** , **classes** , **listes** , **boucles** , **conditions** )")
-node1.insert_node(Node("Sur quel langage ( **Python** , **JavaScript** , **PHP** )?",["conditions"]),"Sur quoi ? ( **variables** , **fontions** , **classes** , **listes** , **boucles** , **conditions** )")
+node1.insert_node(Node("Sur quel langage ( **Python** , **PHP** , **JavaScript** )?",["fonctions"]),"Sur quoi ? ( **variables** , **fontions** , **classes** , **listes** , **boucles** , **conditions** )")
+node1.insert_node(Node("Sur quel langage ( **JavaScript** , **Python** , **PHP** )?",["listes"]),"Sur quoi ? ( **variables** , **fontions** , **classes** , **listes** , **boucles** , **conditions** )")
+node1.insert_node(Node("Sur quel langage ( **JavaScript** , **PHP** , **Python** )?",["variables"]),"Sur quoi ? ( **variables** , **fontions** , **classes** , **listes** , **boucles** , **conditions** )")
+node1.insert_node(Node("Sur quel langage ( **PHP** , **JavaScript** , **Python** )?",["boucles"]),"Sur quoi ? ( **variables** , **fontions** , **classes** , **listes** , **boucles** , **conditions** )")
+node1.insert_node(Node("Sur quel langage ( **PHP** , **Python** , **JavaScript** )?",["conditions"]),"Sur quoi ? ( **variables** , **fontions** , **classes** , **listes** , **boucles** , **conditions** )")
 
 #  Classes
-node1.insert_node(Node("https://docs.python.org/fr/3/tutorial/classes.html",["python","Python"]),"Sur quel langage  **Python** , **JavaScript** , **PHP** )?")
-node1.insert_node(Node("https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Classes",["javascript","JavaScript"]),"Sur quel langage  **Python** , **JavaScript** , **PHP** )?")
-node1.insert_node(Node("https://www.php.net/manual/fr/language.oop5.php",["php","PHP"]),"Sur quel langage  **Python** , **JavaScript** , **PHP** )?")
+node1.insert_node(Node("https://docs.python.org/fr/3/tutorial/classes.html",["python","Python"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
+node1.insert_node(Node("https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Classes",["javascript","JavaScript"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
+node1.insert_node(Node("https://www.php.net/manual/fr/language.oop5.php",["php","PHP"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
 
 # Fonctions
-node1.insert_node(Node("https://python.sdv.univ-paris-diderot.fr/09_fonctions/",["python","Python"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
-node1.insert_node(Node("https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Functions",["javascript","JavaScript"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
-node1.insert_node(Node("https://www.php.net/manual/fr/language.functions.php",["php","PHP"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
+node1.insert_node(Node("https://python.sdv.univ-paris-diderot.fr/09_fonctions/",["python","Python"]),"Sur quel langage ( **Python** , **PHP** , **JavaScript** )?")
+node1.insert_node(Node("https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Functions",["javascript","JavaScript"]),"Sur quel langage ( **Python** , **PHP** , **JavaScript** )?")
+node1.insert_node(Node("https://www.php.net/manual/fr/language.functions.php",["php","PHP"]),"Sur quel langage ( **Python** , **PHP** , **JavaScript** )?")
 
 #  Listes
-node1.insert_node(Node("https://python.sdv.univ-paris-diderot.fr/04_listes/",["python","Python"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
-node1.insert_node(Node("https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array",["javascript","JavaScript"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
-node1.insert_node(Node("https://www.php.net/manual/fr/function.list.php",["php","PHP"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
+node1.insert_node(Node("https://python.sdv.univ-paris-diderot.fr/04_listes/",["python","Python"]),"Sur quel langage ( **JavaScript** , **Python** , **PHP** )?")
+node1.insert_node(Node("https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array",["javascript","JavaScript"]),"Sur quel langage ( **JavaScript** , **Python** , **PHP** )?")
+node1.insert_node(Node("https://www.php.net/manual/fr/function.list.php",["php","PHP"]),"Sur quel langage ( **JavaScript** , **Python** , **PHP** )?")
 
 # Variables
-node1.insert_node(Node("https://python.sdv.univ-paris-diderot.fr/02_variables/",["python","Python"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
-node1.insert_node(Node("https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps/Variables",["javascript","JavaScript"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
-node1.insert_node(Node("https://www.php.net/manual/fr/language.variables.php",["php","PHP"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
+node1.insert_node(Node("https://python.sdv.univ-paris-diderot.fr/02_variables/",["python","Python"]),"Sur quel langage ( **JavaScript** , **PHP** , **Python** )?")
+node1.insert_node(Node("https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps/Variables",["javascript","JavaScript"]),"Sur quel langage ( **JavaScript** , **PHP** , **Python** )?")
+node1.insert_node(Node("https://www.php.net/manual/fr/language.variables.php",["php","PHP"]),"Sur quel langage ( **JavaScript** , **PHP** , **Python** )?")
 
 # Boucles
-node1.insert_node(Node("https://courspython.com/boucles.html",["python","Python"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
-node1.insert_node(Node("https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Loops_and_iteration",["javascript","JavaScript"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
-node1.insert_node(Node("https://www.php.net/manual/fr/control-structures.for.php",["php","PHP"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
+node1.insert_node(Node("https://courspython.com/boucles.html",["python","Python"]),"Sur quel langage ( **PHP** , **JavaScript** , **Python** )?")
+node1.insert_node(Node("https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Loops_and_iteration",["javascript","JavaScript"]),"Sur quel langage ( **PHP** , **JavaScript** , **Python** )?")
+node1.insert_node(Node("https://www.php.net/manual/fr/control-structures.for.php",["php","PHP"]),"Sur quel langage ( **PHP** , **JavaScript** , **Python** )?")
 
 # Conditions
-node1.insert_node(Node("https://python.doctor/page-apprendre-conditions-structures-conditionnelles-if-else-python-cours-debutant",["python","Python"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
-node1.insert_node(Node("https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/if...else",["javascript","JavaScript"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
-node1.insert_node(Node("https://www.php.net/manual/fr/control-structures.if.php",["php","PHP"]),"Sur quel langage ( **Python** , **JavaScript** , **PHP** )?")
+node1.insert_node(Node("https://python.doctor/page-apprendre-conditions-structures-conditionnelles-if-else-python-cours-debutant",["python","Python"]),"Sur quel langage ( **PHP** , **Python** , **JavaScript** )?")
+node1.insert_node(Node("https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/if...else",["javascript","JavaScript"]),"Sur quel langage ( **PHP** , **Python** , **JavaScript** )?")
+node1.insert_node(Node("https://www.php.net/manual/fr/control-structures.if.php",["php","PHP"]),"Sur quel langage ( **PHP** , **Python** , **JavaScript** )?")
 
 # Choix du langage global
 node1.insert_node(Node("https://docs.python.org/3/tutorial/index.html",["python","Python"]),"Sur quel langage ? ( **Python** , **JavaScript** , **PHP** , **MySQL** , **HTML** , **CSS** )")

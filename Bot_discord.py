@@ -1,3 +1,4 @@
+from ctypes.wintypes import INT
 import discord
 from discord.ext import commands
 from Arbre import *
@@ -16,11 +17,14 @@ client = commands.Bot(intents=default_intents,command_prefix="/")
 client.remove_command("help")
 
 ### A changer si vous êtes sur votre propre serveur :
-## Ligne 470 : ID du channel help
-## Ligne 524 : ID du channel general
-## Ligne 534 : Token du bot
+## Ligne 473 : ID du channel help en (INT)
+help_channel=
+## Ligne 527 : ID du channel general (INT)
+landing_channel=
+## Ligne 537 : Token du bot
+bot_token=""
 
-### Ligne 230 : Début des commandes du bot
+### Ligne 232 : Début des commandes du bot
 
 ## Hel
 # Commande /help pour des informations sur les commandes du bot
@@ -467,7 +471,7 @@ async def on_message(message):
     global temp_root
     global questionPoser
     # C'est le channel où les réponses du bot seront
-    Help_channel = client.get_channel(978583666517241906)
+    Help_channel = client.get_channel(help_channel)
     if questionPoser == True:
         for child in Root.list_child_node:
             if len(Root.list_child_node) < 1:
@@ -521,7 +525,7 @@ async def on_message(message):
 # Quand quelqu'un rejoins le serveur lui indique la commande à entrer pour avoir des indications sur l'utilisation du bot
 @client.event
 async def on_member_join(member):
-    landing = client.get_channel(978583486963257437)
+    landing = client.get_channel(landing_channel)
     await landing.send(f"Bienvenue, pour voir les commandes du bot, tapez /help dans le channel #help-me")
 
 # Envoie un message dans le terminal pour dire que le bot est prêt à être utilisé
@@ -531,4 +535,4 @@ async def on_ready():
 
 # Commande permettant de connecter son bot au serveur Discord
 # Token du bot
-client.run("OTc4MjI5MzQ1MzU1MTk4NDY0.GFMuU4.wKe1rOIoogp8I77GATTkmPvnbWNp-LdmuOV-WQ")
+client.run(bot_token)
