@@ -523,7 +523,7 @@ async def on_message(message):
 @client.event
 async def on_member_join(member):
     landing = client.get_channel(978583486963257437)
-    await landing.send(f"Bienvenue pour voir les commandes du bot, tapez /help")
+    await landing.send(f"Bienvenue, pour voir les commandes du bot, tapez /help dans le channel #help-me")
 
 # Envoie un message dans le terminal pour dire que le bot est prêt à être utilisé
 @client.event
