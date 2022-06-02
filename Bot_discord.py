@@ -231,7 +231,7 @@ async def clear(ctx):
 @client.command(pass_context=True)
 async def aide_tips(ctx):
     embed = discord.Embed(description = f"{ctx.author.mention} Voici un exemple de conversation avec le Bot")
-    file = discord.File("screenshot/aide_tips.png", filename="image.png")
+    file = discord.File("screenshot/aide/aide_tips.png", filename="image.png")
     embed.set_image(url=('attachment://image.png'))
     await ctx.send(file=file, embed=embed)
 
@@ -531,4 +531,4 @@ async def on_ready():
 
 # Commande permettant de connecter son bot au serveur Discord
 # Token du bot
-client.run("OTc4MjI5MzQ1MzU1MTk4NDY0.GPwcuP.PCxrgZxv7vbJP_HQnO7w3R_uwFQn44sFjuj1QM")
+client.run("OTc4MjI5MzQ1MzU1MTk4NDY0.Gxltan.X3MK8T3plK7c9LyWYknxrcYAomsYposle6w5kQ")
