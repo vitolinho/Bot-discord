@@ -10,9 +10,9 @@ pip install --upgrade youtube-dl<br/>
 pip install ffmpeg-python<br/>
 pip install windows-curses<br/>
 pip install -U discord.py[voice]<br/><br/>
-Clonez le repo ou Téléchargez le en ZIP puis exécuter le fichier Bot_discord.py !<br/>( Il sera nécessaire de remplacer le token du bot par le votre si vous voulez le tester sur votre propre serveur )<br/><br/>
+Clonez le repo ou téléchargez le en ZIP puis exécutez le fichier Bot_discord.py !<br/>( Il sera nécessaire de remplacer le token du bot par le votre si vous voulez le tester sur votre propre serveur )<br/><br/>
 Si vous voulez rejoindre notre serveur discord de test :<br/>
-![Discord Shield](https://discordapp.com/api/guilds/[978583486963257434]/widget.png?style=shield)
+![Discord](https://discordapp.com/api/guilds/978583486963257434/widget.png?style=shield)<br/>
 
 ## Objectifs du projet
 
